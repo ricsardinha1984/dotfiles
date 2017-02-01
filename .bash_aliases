@@ -16,3 +16,6 @@ alias gbclean='for x in `g branch | grep -v master`; do g branch -d $x; done'
 
 tagdelete(){ g tag -d $1; g push origin :refs/tags/$1; }
 alias gtagdelete='tagdelete'
+
+# ansible
+alias aplay='ansible-playbook main.yml -i '
