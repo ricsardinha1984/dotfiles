@@ -107,3 +107,9 @@ if [ -f ~/.credentials ]
 then
   source ~/.credentials
 fi
+
+# Include apparix file (if present).
+if [ -f ~/.apparix ]
+then
+  source ~/.apparix
+fi
