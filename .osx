@@ -250,8 +250,16 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Set the icon size of Dock items
+# Dock: tile size and magnification
 defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock largesize -int 100
+defaults write com.apple.dock magnification -bool true
+
+# Dock: don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+# Dock: don’t show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Enable spring loading for all Dock items
 # defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
