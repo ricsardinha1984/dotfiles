@@ -1,12 +1,8 @@
 [user]
 	name = Pedro Januário
 	email = prnjanuario@gmail.com
-[core]
-	excludesfile = ~/.gitignore
-  autocrlf = input
 [web]
   browser = google-chrome
-
 [merge]
 	keepbackup = false
 	tool = diffmerge
@@ -17,5 +13,6 @@
 [core]
 	excludesfile = ~/.gitignore
   autocrlf = input
+	compression = 9
 [alias]
   tagcommit = !sh -c 'git rev-list $0 | head -n 1'
