@@ -1,0 +1,15 @@
+{
+  "websites": {
+    "lodash": "https://lodash.com",
+    "sinonjs": "http://sinonjs.org",
+    "chaijs": "http://chaijs.com",
+    "react": "https://facebook.github.io/react/"
+  },
+  "options": {
+    "destination": "/Users/peter/dev/www/airplane"
+  },
+  "commands": {
+    "clone": "mkdir -p <%- destination %> && cd <%- destination %> && httrack <%- url %>",
+    "update": "cd <%- destination %> && httrack --update <%- url %>"
+  }
+}
